@@ -76,20 +76,15 @@ a {
     &:nth-child(3) {
       -webkit-transition-delay: 0.15s;
     }
-    &:nth-child(4) {
-      -webkit-transition-delay: 0.2s;
-    }
-    &:nth-child(5) {
-      -webkit-transition-delay: 0.25s;
-    }
     a {
       color: #fff;
       font-family: "Lato", Arial, Helvetica, sans-serif;
-      font-size: 16px;
+      font-size: 30px;
       width: 100%;
       display: block;
       float: left;
-      line-height: 40px;
+      line-height: 50px;
+      font-weight: 700;
     }
   }
 }
@@ -97,8 +92,8 @@ a {
 .oppenned {
   .sub-menu {
     opacity: 1;
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
   }
   span:nth-child(2) {
     overflow: visible;
@@ -112,10 +107,10 @@ a {
     transform: rotate(45deg) translateY(12px) translateX(12px);
   }
   span:nth-child(2) {
-    height: 400px;
-    width: 400px;
-    left: -160px;
-    top: -160px;
+    height: 500px;
+    width: 500px;
+    left: -200px;
+    top: -140px;
     border-radius: 50%;
     background: rgb(131, 58, 180);
     background: linear-gradient(
@@ -131,12 +126,20 @@ a {
   li {
     margin-left: 168px;
   }
+  .nav-tittle {
+    position: fixed;
+    left: 100px;
+    top: -4px;
+    font-size: 45px;
+    color: white;
+    z-index: 120;
+  }
 }
 .nav-tittle {
-  margin-left: 40px;
-  font-size: 20px;
-  padding: 0;
-}
-.navbar {
-  z-index: 9;
+  position: fixed;
+  left: 100px;
+  top: -4px;
+  font-size: 45px;
+  color: white;
+  z-index: 120;
 }

@@ -60,6 +60,7 @@ class Navbar extends Component {
               }
             }}
           ></span>
+          <p className="nav-tittle">EXP|CON</p>
         </div>
       </div>
     );
