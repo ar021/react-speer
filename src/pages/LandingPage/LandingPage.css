@@ -1,0 +1,141 @@
+.lanmding-page {
+  position: relative;
+}
+
+.hero-section {
+  color: white;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+
+.hero-section-tittle {
+  font-size: 70px;
+  font-weight: 500;
+  margin: 20px auto;
+}
+.hero-section-subtittle {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+.try-button {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 30px;
+  border: none;
+  padding: 0.8em 2.5em;
+  outline: none;
+  color: white;
+  font-style: 1.2em;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  background: none;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+.try-button:before,
+.try-button:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10em;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 105%;
+  height: 125%;
+  content: "";
+  z-index: -2;
+  background-size: 400% 400%;
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+}
+
+.try-button:before {
+  -webkit-filter: blur(7px);
+  filter: blur(7px);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-animation: pulse 10s infinite ease;
+  animation: pulse 10s infinite ease;
+}
+
+.try-button:after {
+  -webkit-filter: blur(0.3px);
+  filter: blur(0.3px);
+}
+
+.try-button:hover:before {
+  width: 125%;
+  height: 145%;
+}
+
+/* @keyframes slidy {
+  0%,
+  20%,
+  100% {
+    left: 0;
+  }
+
+  50%,
+  70% {
+    left: -100%;
+  }
+} */
+
+.img-slider {
+  position: relative;
+  width: 100vw;
+  height: 400px;
+}
+.img-slider .slider-container {
+  position: absolute;
+  width: 300%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  animation: slider 26s infinite;
+}
+.img-slider .slider-container .slide {
+  position: relative;
+  width: 33.33333333%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+.img-slider .slider-container .slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@keyframes slider {
+  0%,
+  25%,
+  100% {
+    left: 0;
+  }
+
+  30%,
+  55% {
+    left: -100%;
+  }
+
+  60%,
+  85% {
+    left: -200%;
+  }
+}
